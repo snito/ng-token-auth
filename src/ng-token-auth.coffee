@@ -49,6 +49,8 @@ angular.module('ng-token-auth', ['ipCookie'])
           facebook:  '/auth/facebook'
           google:    '/auth/google_oauth2'
 
+        matchUrl: (requestUrl, apiUrl) ->
+          return requestUrl.match(apiUrl)
 
     defaultConfigName = "default"
 
